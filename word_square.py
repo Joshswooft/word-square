@@ -1,7 +1,6 @@
 
 from marisa_trie import Trie
 
-from adjacency_list import Graph
 from anagram import get_anagrams
 
 '''
