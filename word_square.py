@@ -46,6 +46,11 @@ def recurse_generate(words:list, trie: Trie, square_size:int, chosen_words_lengt
     # if not a key then we know the current permutation is not a solution so return None
     # loop through the characters
 
+    for i in range(chosen_words_length, square_size):
+        prefix = "".join(word[i] for word in words)
+        # using the soon to be deprecated function because it runs ~30% faster
+        if not trie.has_keys_with_prefix(prefix):
+            return None
         
     prefix = "".join(word[chosen_words_length] for word in words)
     # we use a prefix to dictate which key to start going over
