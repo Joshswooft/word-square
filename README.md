@@ -10,6 +10,8 @@ One variant is where you're given an n\*n grid and asked to place a set of lette
 these rules, and that’s our challenge: given the grid dimensions and a list of letters, can you
 produce a valid word square.
 
+words list: https://norvig.com/ngrams/enable1.txt
+
 ## Methodology
 
 ## Requirements
